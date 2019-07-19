@@ -141,4 +141,58 @@
       <Name>FicusUIChallenge</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AbrilFatface-Regular.ttf" />
+    <BundleResource Include="Resources\bg_main_page%403x.png" />
+    <BundleResource Include="Resources\bg_main_page%402x.png" />
+    <BundleResource Include="Resources\bg_main_page.png" />
+    <BundleResource Include="Resources\ic_back_white%403x.png" />
+    <BundleResource Include="Resources\ic_back_white%402x.png" />
+    <BundleResource Include="Resources\ic_back_white.png" />
+    <BundleResource Include="Resources\ic_back%403x.png" />
+    <BundleResource Include="Resources\ic_back%402x.png" />
+    <BundleResource Include="Resources\ic_back.png" />
+    <BundleResource Include="Resources\ic_calendar%403x.png" />
+    <BundleResource Include="Resources\ic_calendar%402x.png" />
+    <BundleResource Include="Resources\ic_calendar.png" />
+    <BundleResource Include="Resources\ic_circles%403x.png" />
+    <BundleResource Include="Resources\ic_circles%402x.png" />
+    <BundleResource Include="Resources\ic_circles.png" />
+    <BundleResource Include="Resources\ic_down_arrow%403x.png" />
+    <BundleResource Include="Resources\ic_down_arrow%402x.png" />
+    <BundleResource Include="Resources\ic_down_arrow.png" />
+    <BundleResource Include="Resources\ic_forward%403x.png" />
+    <BundleResource Include="Resources\ic_forward%402x.png" />
+    <BundleResource Include="Resources\ic_forward.png" />
+    <BundleResource Include="Resources\ic_leaf_left%403x.png" />
+    <BundleResource Include="Resources\ic_leaf_left%402x.png" />
+    <BundleResource Include="Resources\ic_leaf_left.png" />
+    <BundleResource Include="Resources\ic_leaf_right_tomorrow%403x.png" />
+    <BundleResource Include="Resources\ic_leaf_right_tomorrow%402x.png" />
+    <BundleResource Include="Resources\ic_leaf_right_tomorrow.png" />
+    <BundleResource Include="Resources\ic_leaf_right%403x.png" />
+    <BundleResource Include="Resources\ic_leaf_right%402x.png" />
+    <BundleResource Include="Resources\ic_leaf_right.png" />
+    <BundleResource Include="Resources\ic_leaf_square%403x.png" />
+    <BundleResource Include="Resources\ic_leaf_square%402x.png" />
+    <BundleResource Include="Resources\ic_leaf_square.png" />
+    <BundleResource Include="Resources\ic_light_bulb%403x.png" />
+    <BundleResource Include="Resources\ic_light_bulb%402x.png" />
+    <BundleResource Include="Resources\ic_light_bulb.png" />
+    <BundleResource Include="Resources\ic_lightning%403x.png" />
+    <BundleResource Include="Resources\ic_lightning%402x.png" />
+    <BundleResource Include="Resources\ic_lightning.png" />
+    <BundleResource Include="Resources\ic_more%403x.png" />
+    <BundleResource Include="Resources\ic_more%402x.png" />
+    <BundleResource Include="Resources\ic_more.png" />
+    <BundleResource Include="Resources\ic_temp%403x.png" />
+    <BundleResource Include="Resources\ic_temp%402x.png" />
+    <BundleResource Include="Resources\ic_temp.png" />
+    <BundleResource Include="Resources\ic_water_drop%403x.png" />
+    <BundleResource Include="Resources\ic_water_drop%402x.png" />
+    <BundleResource Include="Resources\ic_water_drop.png" />
+  </ItemGroup>
 </Project>

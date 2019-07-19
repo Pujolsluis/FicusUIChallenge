@@ -95,6 +95,102 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\bg_main_page.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\bg_main_page.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\bg_main_page.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\bg_main_page.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\bg_main_page.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\bg_main_page.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_back_white.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_back_white.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_back_white.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_back_white.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_back_white.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_back_white.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_back.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_back.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_back.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_back.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_back.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_back.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_calendar.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_calendar.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_calendar.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_calendar.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_calendar.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_calendar.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_circles.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_circles.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_circles.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_circles.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_circles.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_circles.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_down_arrow.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_down_arrow.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_down_arrow.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_down_arrow.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_down_arrow.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_down_arrow.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_forward.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_forward.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_forward.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_forward.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_forward.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_forward.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_leaf_left.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_leaf_left.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_leaf_left.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_leaf_left.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_leaf_left.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_leaf_left.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_leaf_right_tomorrow.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_leaf_right_tomorrow.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_leaf_right_tomorrow.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_leaf_right_tomorrow.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_leaf_right_tomorrow.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_leaf_right_tomorrow.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_leaf_right.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_leaf_right.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_leaf_right.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_leaf_right.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_leaf_right.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_leaf_right.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_leaf_square.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_leaf_square.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_leaf_square.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_leaf_square.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_leaf_square.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_leaf_square.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_light_bulb.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_light_bulb.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_light_bulb.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_light_bulb.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_light_bulb.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_light_bulb.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_lightning.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_lightning.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_lightning.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_lightning.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_lightning.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_lightning.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_more.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_more.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_more.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_more.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_more.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_more.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_temp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_temp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_temp.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_temp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_temp.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_temp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_water_drop.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_water_drop.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_water_drop.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_water_drop.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_water_drop.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_water_drop.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
@@ -102,12 +198,19 @@
     <Folder Include="Resources\drawable-xhdpi\" />
     <Folder Include="Resources\drawable-xxhdpi\" />
     <Folder Include="Resources\drawable-xxxhdpi\" />
+    <Folder Include="Assets\" />
+    <Folder Include="Resources\" />
+    <Folder Include="Resources\drawable-mdpi\" />
+    <Folder Include="Resources\drawable-ldpi\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FicusUIChallenge\FicusUIChallenge.csproj">
       <Project>{27FDF516-677D-4D8E-BA43-F98AE3BA5B23}</Project>
       <Name>FicusUIChallenge</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AbrilFatface-Regular.ttf" />
   </ItemGroup>
  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

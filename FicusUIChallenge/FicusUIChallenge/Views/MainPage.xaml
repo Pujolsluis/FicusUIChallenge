@@ -6,6 +6,7 @@
              ios:Page.UseSafeArea="true">
     <ContentPage.Content>
         <StackLayout>
+            <Image Source="bg_main_page.png"/>
             <Label Text="{Binding Text}"
                    HorizontalOptions="CenterAndExpand"
                    VerticalOptions="CenterAndExpand"/>
