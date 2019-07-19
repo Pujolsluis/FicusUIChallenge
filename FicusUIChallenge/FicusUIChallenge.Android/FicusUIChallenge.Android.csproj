@@ -63,6 +63,9 @@
     <PackageReference Include="PropertyChanged.Fody">
       <Version>3.0.1</Version>
     </PackageReference>
+    <PackageReference Include="Prism.Unity.Forms">
+      <Version>7.1.0.431</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />

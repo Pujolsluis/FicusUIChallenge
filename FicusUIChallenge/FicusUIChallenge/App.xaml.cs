@@ -1,31 +1,29 @@
 ﻿using System;
+using FicusUIChallenge.Helpers;
+using FicusUIChallenge.ViewModels;
+using FicusUIChallenge.Views;
+using Prism;
+using Prism.Ioc;
+using Prism.Unity;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace FicusUIChallenge
 {
-    public partial class App : Application
+    public partial class App : PrismApplication
     {
-        public App()
+        public App(IPlatformInitializer platformInitializer) : base(platformInitializer)
         {
-            InitializeComponent();
-
-            MainPage = new MainPage();
         }
 
-        protected override void OnStart()
+        protected override void OnInitialized()
         {
-            // Handle when your app starts
+            NavigationService.NavigateAsync(NavigationConstants.MainPage);
         }
 
-        protected override void OnSleep()
+        protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            // Handle when your app sleeps
-        }
-
-        protected override void OnResume()
-        {
-            // Handle when your app resumes
+            containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
         }
     }
 }
