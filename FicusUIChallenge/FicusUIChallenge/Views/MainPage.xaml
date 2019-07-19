@@ -4,8 +4,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:behaviors="clr-namespace:FicusUIChallenge.Helpers.Behaviors"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true"
              xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
-             ios:Page.UseSafeArea="true">
+             >
     <ContentPage.Content>
         <AbsoluteLayout>
             <Image AbsoluteLayout.LayoutBounds="0,0,1,1"

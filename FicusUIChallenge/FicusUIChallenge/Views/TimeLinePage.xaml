@@ -5,7 +5,9 @@
              xmlns:behaviors="clr-namespace:FicusUIChallenge.Helpers.Behaviors"
              xmlns:controls="clr-namespace:FicusUIChallenge.Controls"
              xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
-             xmlns:converters="clr-namespace:FicusUIChallenge.Converters">
+             xmlns:converters="clr-namespace:FicusUIChallenge.Converters"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true">
     <ContentPage.Resources>
         <ResourceDictionary>
             <converters:TimeAgoConverter x:Key="TimeAgoConverter"/>
@@ -87,6 +89,7 @@
             <yummy:PancakeView AbsoluteLayout.LayoutBounds="0,1,1,.6"
                                AbsoluteLayout.LayoutFlags="All"
                                Opacity="0.10"
+                               BackgroundColor="Aqua"
                                HorizontalOptions="FillAndExpand"
                                VerticalOptions="FillAndExpand">
                 <yummy:PancakeView.BackgroundGradientStops>
@@ -95,7 +98,6 @@
                         <yummy:GradientStop Location="0.35" Color="Transparent" />
                     </x:Array>
                 </yummy:PancakeView.BackgroundGradientStops>
-                <Label Text="Hello?" />
             </yummy:PancakeView>
             <BoxView AbsoluteLayout.LayoutBounds=".385,1,1,.6"
                      AbsoluteLayout.LayoutFlags="PositionProportional, HeightProportional"
@@ -104,6 +106,7 @@
                                        AbsoluteLayout.LayoutFlags="All"
                                        Footer=""
                                        HasUnevenRows="True"
+                                       BackgroundColor="Transparent"
                                        ItemsSource="{Binding Data}"
                                        LoadMoreCommand="{Binding OnLoadMoreCommand}"
                                        SeparatorVisibility="None"
@@ -112,8 +115,13 @@
                 <controls:ExtendedListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Grid Margin="88,42,0,0"
-                                  ColumnSpacing="24">
+                            <Grid ColumnSpacing="24">
+                                <Grid.Margin>
+                                    <OnPlatform x:TypeArguments="Thickness">
+                                        <On Platform="iOS" Value="72,36,0,0" />
+                                        <On Platform="Android" Value="84,42,0,0" />
+                                    </OnPlatform>
+                                </Grid.Margin>
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="32" />
                                     <RowDefinition Height="*" />
