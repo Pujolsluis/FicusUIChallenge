@@ -2,6 +2,7 @@
 <ContentPage x:Class="FicusUIChallenge.Views.MainPage"
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:behaviors="clr-namespace:FicusUIChallenge.Helpers.Behaviors"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
              ios:Page.UseSafeArea="true">
@@ -15,18 +16,24 @@
                          AbsoluteLayout.LayoutBounds=".2,0,1,80"
                          AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"
                          Orientation="Horizontal">
-                <ImageButton WidthRequest="24"
-                             HeightRequest="24"
-                             BackgroundColor="Transparent"
-                             Source="ic_back.png"
-                             HorizontalOptions="StartAndExpand"
-                             VerticalOptions="Center" />
-                <ImageButton WidthRequest="24"
-                             HeightRequest="24"
-                             BackgroundColor="Transparent"
-                             Source="ic_more.png"
-                             HorizontalOptions="EndAndExpand"
-                             VerticalOptions="Center" />
+                <Image WidthRequest="24"
+                       HeightRequest="24"
+                       Source="ic_back.png"
+                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="Center">
+                    <Image.Behaviors>
+                        <behaviors:ViewTappedButtonBehavior Command="{Binding OnBackCommand}" />
+                    </Image.Behaviors>
+                </Image>
+                <Image WidthRequest="24"
+                       HeightRequest="24"
+                       Source="ic_more.png"
+                       HorizontalOptions="EndAndExpand"
+                       VerticalOptions="Center">
+                    <Image.Behaviors>
+                        <behaviors:ViewTappedButtonBehavior Command="{Binding OnMoreCommand}" />
+                    </Image.Behaviors>
+                </Image>
             </StackLayout>
             <Label Margin="16"
                    AbsoluteLayout.LayoutBounds=".2,.08,200,100"
@@ -123,6 +130,9 @@
                            HeightRequest="24"
                            Source="ic_forward.png" />
                 </StackLayout>
+                <yummy:PancakeView.Behaviors>
+                    <behaviors:ViewTappedButtonBehavior Command="{Binding OnGrowingPlanCommand}" />
+                </yummy:PancakeView.Behaviors>
             </yummy:PancakeView>
             <StackLayout AbsoluteLayout.LayoutBounds=".2,.95,180,60"
                          AbsoluteLayout.LayoutFlags="PositionProportional"
@@ -140,6 +150,9 @@
                        HeightRequest="32"
                        Source="ic_down_arrow.png"
                        VerticalOptions="Center" />
+                <StackLayout.Behaviors>
+                    <behaviors:ViewTappedButtonBehavior Command="{Binding OnGrowingPlanCommand}" />
+                </StackLayout.Behaviors>
             </StackLayout>
         </AbsoluteLayout>
     </ContentPage.Content>

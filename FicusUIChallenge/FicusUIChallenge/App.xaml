@@ -14,6 +14,10 @@
                 <Setter Property="HorizontalOptions" Value="Center" />
                 <Setter Property="VerticalOptions" Value="Center" />
             </Style>
+            <Style x:Key="progressBarStyle" TargetType="ProgressBar">
+                <Setter Property="ProgressColor" Value="#348f5a" />
+                <Setter Property="VerticalOptions" Value="Center" />
+            </Style>
         </ResourceDictionary>
     </prism:PrismApplication.Resources>
 </prism:PrismApplication>
