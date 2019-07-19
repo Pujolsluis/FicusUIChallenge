@@ -1,5 +1,97 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FicusUIChallenge.Views.TimeLinePage">
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage x:Class="FicusUIChallenge.Views.TimeLinePage"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:behaviors="clr-namespace:FicusUIChallenge.Helpers.Behaviors"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView">
     <ContentPage.Content>
+        <AbsoluteLayout>
+            <BoxView AbsoluteLayout.LayoutBounds=".385,0,1,.4"
+                     AbsoluteLayout.LayoutFlags="PositionProportional, HeightProportional"
+                     Color="#e1e6ec" />
+            <StackLayout Padding="48,0"
+                         AbsoluteLayout.LayoutBounds=".2,0,1,80"
+                         AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"
+                         Orientation="Horizontal">
+                <Image WidthRequest="24"
+                       HeightRequest="24"
+                       Source="ic_back.png"
+                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="Center">
+                    <Image.Behaviors>
+                        <behaviors:ViewTappedButtonBehavior Command="{Binding OnBackCommand}" />
+                    </Image.Behaviors>
+                </Image>
+                <Image WidthRequest="24"
+                       HeightRequest="24"
+                       Source="ic_calendar.png"
+                       HorizontalOptions="EndAndExpand"
+                       VerticalOptions="Center">
+                    <Image.Behaviors>
+                        <behaviors:ViewTappedButtonBehavior Command="{Binding OnCalendarCommand}" />
+                    </Image.Behaviors>
+                </Image>
+            </StackLayout>
+            <Label Margin="48,16,16,16"
+                   AbsoluteLayout.LayoutBounds=".2,.08,1,100"
+                   AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+                   FontSize="42"
+                   Text="Growing Plan"
+                   TextColor="#212121"
+                   VerticalTextAlignment="Center"
+                   HorizontalOptions="Start">
+                <Label.FontFamily>
+                    <OnPlatform x:Key="AbrilFatface" x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="AbrilFatface-Regular" />
+                        <On Platform="Android" Value="AbrilFatface-Regular.ttf#Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+            <Grid AbsoluteLayout.LayoutBounds=".54,.3,.6,.13"
+                  AbsoluteLayout.LayoutFlags="All"
+                  ColumnSpacing="24">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="32" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="20" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label FontAttributes="Bold"
+                       FontSize="Medium"
+                       Text="28.01"
+                       TextColor="#848696" />
+                <Image Grid.Column="1"
+                       Source="ic_leaf_right_tomorrow.png"
+                       Style="{DynamicResource iconStyle}" />
+                <Label Grid.Column="2"
+                       FontAttributes="Bold"
+                       FontSize="Medium"
+                       Text="Add some light"
+                       TextColor="#212121" />
+                <Label Grid.Row="1"
+                       Grid.Column="2"
+                       Text="Tomorrow"
+                       TextColor="#848696" />
+            </Grid>
+            <yummy:PancakeView AbsoluteLayout.LayoutBounds="0,1,1,.6" 
+                               AbsoluteLayout.LayoutFlags="All"
+                               VerticalOptions="FillAndExpand"
+                               HorizontalOptions="FillAndExpand"
+                               Opacity="0.10">
+                <yummy:PancakeView.BackgroundGradientStops>
+                    <x:Array Type="{x:Type yummy:GradientStop}">
+                        <yummy:GradientStop Location="0" Color="#00ae47" />
+                        <yummy:GradientStop Location="0.35" Color="Transparent" />
+                    </x:Array>
+                </yummy:PancakeView.BackgroundGradientStops>
+                <Label Text="Hello?"/>
+            </yummy:PancakeView>
+            <BoxView AbsoluteLayout.LayoutBounds=".385,1,1,.6"
+                     AbsoluteLayout.LayoutFlags="PositionProportional, HeightProportional"
+                     Color="#b7d8cb" />
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -8,6 +8,15 @@
              mc:Ignorable="d">
     <prism:PrismApplication.Resources>
         <ResourceDictionary>
+            <!--App colors-->
+            <Color x:Key="Primary">#00ae47</Color>
+            <Color x:Key="PrimaryDark">#348f5a</Color>
+            <Color x:Key="TextColor">#212121</Color>
+            <Color x:Key="GreenTextColor">#6a9d83</Color>
+            <Color x:Key="Accent">#00ae47</Color>
+            <Color x:Key="LightGray">#e1e6ec</Color>
+            <Color x:Key="Gray">#848696</Color>
+            
             <Style x:Key="iconStyle" TargetType="Image">
                 <Setter Property="HeightRequest" Value="20" />
                 <Setter Property="WidthRequest" Value="20" />

@@ -67,7 +67,7 @@
       <Version>7.1.0.431</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms.PancakeView">
-      <Version>1.0.21</Version>
+      <Version>1.0.25-beta</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
