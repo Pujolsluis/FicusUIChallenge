@@ -132,7 +132,7 @@
                            Source="ic_forward.png" />
                 </StackLayout>
                 <yummy:PancakeView.Behaviors>
-                    <behaviors:ViewTappedButtonBehavior Command="{Binding OnGrowingPlanCommand}" />
+                    <behaviors:ViewTappedButtonBehavior Command="{Binding OnTakeActionCommand}" />
                 </yummy:PancakeView.Behaviors>
             </yummy:PancakeView>
             <StackLayout AbsoluteLayout.LayoutBounds=".2,.95,180,60"
