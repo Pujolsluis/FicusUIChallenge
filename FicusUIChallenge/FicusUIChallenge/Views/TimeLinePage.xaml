@@ -3,7 +3,15 @@
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:behaviors="clr-namespace:FicusUIChallenge.Helpers.Behaviors"
-             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView">
+             xmlns:controls="clr-namespace:FicusUIChallenge.Controls"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:converters="clr-namespace:FicusUIChallenge.Converters">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:TimeAgoConverter x:Key="TimeAgoConverter"/>
+            <converters:LeafImageConverter x:Key="LeafImageConverter"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <AbsoluteLayout>
             <BoxView AbsoluteLayout.LayoutBounds=".385,0,1,.4"
@@ -76,22 +84,69 @@
                        Text="Tomorrow"
                        TextColor="#848696" />
             </Grid>
-            <yummy:PancakeView AbsoluteLayout.LayoutBounds="0,1,1,.6" 
+            <yummy:PancakeView AbsoluteLayout.LayoutBounds="0,1,1,.6"
                                AbsoluteLayout.LayoutFlags="All"
-                               VerticalOptions="FillAndExpand"
+                               Opacity="0.10"
                                HorizontalOptions="FillAndExpand"
-                               Opacity="0.10">
+                               VerticalOptions="FillAndExpand">
                 <yummy:PancakeView.BackgroundGradientStops>
                     <x:Array Type="{x:Type yummy:GradientStop}">
                         <yummy:GradientStop Location="0" Color="#00ae47" />
                         <yummy:GradientStop Location="0.35" Color="Transparent" />
                     </x:Array>
                 </yummy:PancakeView.BackgroundGradientStops>
-                <Label Text="Hello?"/>
+                <Label Text="Hello?" />
             </yummy:PancakeView>
             <BoxView AbsoluteLayout.LayoutBounds=".385,1,1,.6"
                      AbsoluteLayout.LayoutFlags="PositionProportional, HeightProportional"
                      Color="#b7d8cb" />
+            <controls:ExtendedListView AbsoluteLayout.LayoutBounds="0,1,1,.6"
+                                       AbsoluteLayout.LayoutFlags="All"
+                                       Footer=""
+                                       HasUnevenRows="True"
+                                       ItemsSource="{Binding Data}"
+                                       LoadMoreCommand="{Binding OnLoadMoreCommand}"
+                                       SeparatorVisibility="None"
+                                       SelectionMode="None"
+                                       VerticalOptions="FillAndExpand">
+                <controls:ExtendedListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Margin="88,42,0,0"
+                                  ColumnSpacing="24">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="32" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="20" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label FontAttributes="Bold"
+                                       FontSize="Medium"
+                                       Text="{Binding DateOfAction, StringFormat='{0: dd.MM}'}"
+                                       TextColor="#6c9f85" />
+                                <Image Grid.Column="1"
+                                       Source="ic_leaf_right.png"
+                                       Style="{DynamicResource iconStyle}" />
+                                <Label Grid.Column="2"
+                                       FontAttributes="Bold"
+                                       FontSize="Medium"
+                                       Text="{Binding Title}"
+                                       TextColor="#212121" />
+                                <Label Grid.Row="1"
+                                       Grid.Column="2"
+                                       Text="{Binding DateOfAction, Converter={StaticResource TimeAgoConverter}}"
+                                       TextColor="#697d75" />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </controls:ExtendedListView.ItemTemplate>
+                <controls:ExtendedListView.Footer>
+                    <ActivityIndicator />
+                </controls:ExtendedListView.Footer>
+            </controls:ExtendedListView>
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

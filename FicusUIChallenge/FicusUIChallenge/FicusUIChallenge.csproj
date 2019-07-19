@@ -23,5 +23,8 @@
     <Folder Include="Views\" />
     <Folder Include="Helpers\" />
     <Folder Include="Helpers\Behaviors\" />
+    <Folder Include="Services\" />
+    <Folder Include="Controls\" />
+    <Folder Include="Converters\" />
   </ItemGroup>
 </Project>
