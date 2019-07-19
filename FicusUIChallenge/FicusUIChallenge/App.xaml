@@ -7,5 +7,13 @@
              xmlns:prism="clr-namespace:Prism.Unity;assembly=Prism.Unity.Forms"
              mc:Ignorable="d">
     <prism:PrismApplication.Resources>
+        <ResourceDictionary>
+            <Style x:Key="iconStyle" TargetType="Image">
+                <Setter Property="HeightRequest" Value="20" />
+                <Setter Property="WidthRequest" Value="20" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center" />
+            </Style>
+        </ResourceDictionary>
     </prism:PrismApplication.Resources>
 </prism:PrismApplication>
