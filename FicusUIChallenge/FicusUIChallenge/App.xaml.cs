@@ -25,6 +25,7 @@ namespace FicusUIChallenge
         {
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
             containerRegistry.RegisterForNavigation<TimeLinePage, TimeLinePageViewModel>();
+            containerRegistry.RegisterForNavigation<ActionsPage, ActionsPageViewModel>();
         }
     }
 }

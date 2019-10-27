@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FicusUIChallenge.Views.ActionsPage"
+             xmlns:behaviors="clr-namespace:FicusUIChallenge.Helpers.Behaviors"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid BackgroundColor="#212121"
+                  Padding="32,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                    <StackLayout Padding="0,0,48,0" Grid.ColumnSpan="2"
+                             Orientation="Horizontal">
+                    <Image WidthRequest="24"
+                           HeightRequest="24"
+                           Source="ic_back_white"
+                           HorizontalOptions="StartAndExpand"
+                           VerticalOptions="Center">
+                        <Image.Behaviors>
+                            <behaviors:ViewTappedButtonBehavior Command="{Binding OnBackCommand}" />
+                        </Image.Behaviors>
+                    </Image>
+                </StackLayout>
+                <Label Margin="16" Grid.Row="1" Grid.ColumnSpan="2"
+                       FontSize="32"
+                       Text="Actions"
+                       TextColor="White"
+                       VerticalTextAlignment="Center"
+                       HorizontalOptions="Start">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="AbrilFatface-Regular" />
+                            <On Platform="Android" Value="AbrilFatface-Regular.ttf#Regular" />
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+                <Label Margin="16,32,16,24" Grid.Row="2" Grid.ColumnSpan="2"
+                    FontSize="18"
+                    Text="Recommended"
+                    TextColor="White"
+                    VerticalTextAlignment="Center"
+                    HorizontalOptions="Start">
+                </Label>
+                <BoxView Margin="16,0,0,0"
+                         Grid.Row="3" Grid.Column="0"
+                         WidthRequest="1"
+                         HorizontalOptions="Start"
+                         BackgroundColor="#00ae47"/>
+                <yummy:PancakeView Margin="16,0,0,0" Padding="16,8"
+                                   HeightRequest="100"
+                                   WidthRequest="150"
+                                   BackgroundColor="Transparent"
+                                   BorderColor="White"
+                                   BorderThickness="0.2"
+                                   CornerRadius="0,4,0,4"
+                                   HorizontalOptions="End"
+                                   Grid.Row="3" Grid.Column="0">
+                    <StackLayout Orientation="Vertical"
+                                 Spacing="16"
+                                 Padding="16,0,0,0"
+                                 HorizontalOptions="FillAndExpand"
+                                 VerticalOptions="CenterAndExpand">
+                        <Image WidthRequest="16"
+                               HeightRequest="16"
+                               HorizontalOptions="Start"
+                               Source="ic_water_drop" />
+                        <Label FontSize="14"
+                               Text="Put 1 glass of water"
+                               TextColor="White"
+                               VerticalOptions="StartAndExpand" />
+                    </StackLayout>
+                    <yummy:PancakeView.Behaviors>
+                        <behaviors:ViewTappedButtonBehavior Command="{Binding OnTakeActionCommand}" />
+                    </yummy:PancakeView.Behaviors>
+                </yummy:PancakeView>
+                <BoxView Margin="16,0,0,0"
+                        Grid.Row="3" Grid.Column="1"
+                        WidthRequest="1"
+                        HorizontalOptions="Start"
+                        BackgroundColor="#00ae47"/>
+                <yummy:PancakeView Margin="16,0,0,0" Padding="16,8"
+                                   HeightRequest="100"
+                                   WidthRequest="150"
+                                   BackgroundColor="Transparent"
+                                   BorderColor="White"
+                                   BorderThickness="0.2"
+                                   CornerRadius="0,4,0,4"
+                                   HorizontalOptions="End"
+                                   Grid.Row="3" Grid.Column="1">
+                    <StackLayout Orientation="Vertical"
+                                 Spacing="16"
+                                 Padding="16,0,0,0"
+                                 HorizontalOptions="FillAndExpand"
+                                 VerticalOptions="CenterAndExpand">
+                        <Image WidthRequest="16"
+                               HeightRequest="16"
+                               HorizontalOptions="Start"
+                               Source="ic_circles" />
+                        <Label FontSize="14"
+                               Text="Put 50 gm &#10;of fertilizer"
+                               TextColor="White"
+                               VerticalOptions="StartAndExpand" />
+                    </StackLayout>
+                    <yummy:PancakeView.Behaviors>
+                        <behaviors:ViewTappedButtonBehavior Command="{Binding OnTakeActionCommand}" />
+                    </yummy:PancakeView.Behaviors>
+                </yummy:PancakeView>
+
+            <BoxView Margin="16,8,0,0"
+                    Grid.Row="4" Grid.Column="0"
+                    WidthRequest="1"
+                    HorizontalOptions="Start"
+                    BackgroundColor="#00ae47"/>
+            <yummy:PancakeView Margin="16,8,0,0" Padding="16,8"
+                               HeightRequest="100"
+                               WidthRequest="150"
+                               BackgroundColor="Transparent"
+                               BorderColor="White"
+                               BorderThickness="0.2"
+                               CornerRadius="0,4,0,4"
+                               HorizontalOptions="End"
+                               Grid.Row="4" Grid.Column="0">
+                <StackLayout Orientation="Vertical"
+                             Spacing="16"
+                             Padding="16,0,0,0"
+                             HorizontalOptions="FillAndExpand"
+                             VerticalOptions="CenterAndExpand">
+                    <Image WidthRequest="16"
+                           HeightRequest="16"
+                           HorizontalOptions="Start"
+                           Source="ic_light_bulb" />
+                    <Label FontSize="14"
+                           Text="Increase &#10;the light"
+                           TextColor="White"
+                           VerticalOptions="StartAndExpand" />
+                </StackLayout>
+                <yummy:PancakeView.Behaviors>
+                    <behaviors:ViewTappedButtonBehavior Command="{Binding OnTakeActionCommand}" />
+                </yummy:PancakeView.Behaviors>
+            </yummy:PancakeView>
+            <BoxView Margin="16,8,0,0"
+                    Grid.Row="4" Grid.Column="1"
+                    WidthRequest="1"
+                    HorizontalOptions="Start"
+                    BackgroundColor="#00ae47"/>
+            <yummy:PancakeView Margin="16,8,0,0" Padding="16,8"
+                               HeightRequest="100"
+                               WidthRequest="150"
+                               BackgroundColor="Transparent"
+                               BorderColor="White"
+                               BorderThickness="0.2"
+                               CornerRadius="0,4,0,4"
+                               HorizontalOptions="End"
+                               Grid.Row="4" Grid.Column="1">
+                <StackLayout Orientation="Vertical"
+                             Spacing="16"
+                             Padding="16,0,0,0"
+                             HorizontalOptions="FillAndExpand"
+                             VerticalOptions="CenterAndExpand">
+                    <Image WidthRequest="16"
+                           HeightRequest="16"
+                           HorizontalOptions="Start"
+                           Source="ic_lightning" />
+                    <Label FontSize="14"
+                           Text="Plug in a charger"
+                           TextColor="White"
+                           VerticalOptions="StartAndExpand" />
+                </StackLayout>
+                <yummy:PancakeView.Behaviors>
+                    <behaviors:ViewTappedButtonBehavior Command="{Binding OnTakeActionCommand}" />
+                </yummy:PancakeView.Behaviors>
+            </yummy:PancakeView>
+            <yummy:PancakeView Margin="16,32,-32,0"
+                               Padding="24,16"
+                               HeightRequest="72"
+                               BackgroundColor="#00ae47"
+                               CornerRadius="4,0,4,0"
+                               Grid.Row="5" Grid.ColumnSpan="2"
+                               HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal"
+                             Spacing="16"
+                             HorizontalOptions="FillAndExpand"
+                             VerticalOptions="CenterAndExpand">
+                    <Label FontSize="Medium"
+                           Text="Confirm Actions"
+                           TextColor="White"
+                           VerticalOptions="CenterAndExpand" />
+                    <Image WidthRequest="24"
+                           HeightRequest="24"
+                           Source="ic_forward.png"
+                           HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+                <yummy:PancakeView.Behaviors>
+                    <behaviors:ViewTappedButtonBehavior Command="{Binding OnConfirmActionCommand}" />
+                </yummy:PancakeView.Behaviors>
+            </yummy:PancakeView>
+            <StackLayout Margin="0,32,-32,0" Orientation="Horizontal"
+                         Grid.Row="6" Grid.Column="1"
+                         HorizontalOptions="End"
+                         Spacing="8">
+                <Label FontSize="Medium"
+                       Text="Other Actions"
+                       TextColor="White"
+                       VerticalOptions="Center" />
+                <Image WidthRequest="24"
+                       HeightRequest="24"
+                       Margin="8,0,16,0"
+                       Source="ic_down_arrow.png"
+                       VerticalOptions="Center" />
+                <StackLayout.Behaviors>
+                    <behaviors:ViewTappedButtonBehavior Command="{Binding OnOtherActionsCommand}" />
+                </StackLayout.Behaviors>
+            </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

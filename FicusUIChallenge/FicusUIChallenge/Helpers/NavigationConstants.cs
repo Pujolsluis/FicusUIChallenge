@@ -5,5 +5,6 @@ namespace FicusUIChallenge.Helpers
     {
         public const string MainPage = "MainPage";
         public const string TimelinePage = "TimeLinePage";
+        public const string ActionsPage = "ActionsPage";
     }
 }

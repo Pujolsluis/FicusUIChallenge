@@ -51,7 +51,7 @@
                    VerticalTextAlignment="Center"
                    HorizontalOptions="Start">
                 <Label.FontFamily>
-                    <OnPlatform x:Key="AbrilFatface" x:TypeArguments="x:String">
+                    <OnPlatform x:TypeArguments="x:String">
                         <On Platform="iOS" Value="AbrilFatface-Regular" />
                         <On Platform="Android" Value="AbrilFatface-Regular.ttf#Regular" />
                     </OnPlatform>
@@ -93,10 +93,10 @@
                                HorizontalOptions="FillAndExpand"
                                VerticalOptions="FillAndExpand">
                 <yummy:PancakeView.BackgroundGradientStops>
-                    <x:Array Type="{x:Type yummy:GradientStop}">
-                        <yummy:GradientStop Location="0" Color="#00ae47" />
-                        <yummy:GradientStop Location="0.35" Color="Transparent" />
-                    </x:Array>
+                    <yummy:GradientStopCollection>
+                        <yummy:GradientStop Offset="0" Color="#00ae47" />
+                        <yummy:GradientStop Offset="0.35" Color="Transparent" />
+                    </yummy:GradientStopCollection>
                 </yummy:PancakeView.BackgroundGradientStops>
             </yummy:PancakeView>
             <BoxView AbsoluteLayout.LayoutBounds=".385,1,1,.6"
@@ -104,7 +104,6 @@
                      Color="#b7d8cb" />
             <controls:ExtendedListView AbsoluteLayout.LayoutBounds="0,1,1,.6"
                                        AbsoluteLayout.LayoutFlags="All"
-                                       Footer=""
                                        HasUnevenRows="True"
                                        BackgroundColor="Transparent"
                                        ItemsSource="{Binding Data}"

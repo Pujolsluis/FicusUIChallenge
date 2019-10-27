@@ -10,6 +10,7 @@ namespace FicusUIChallenge.ViewModels
     public class MainPageViewModel : BaseViewModel
     {
         public DelegateCommand OnGrowingPlanCommand { get; set; }
+        public DelegateCommand OnTakeActionCommand { get; set; }
 
         public MainPageViewModel(INavigationService navigationService, IPageDialogService pageDialogService = null) : base(navigationService, pageDialogService)
         {
@@ -17,7 +18,15 @@ namespace FicusUIChallenge.ViewModels
             {
                 if (IsBusy) return;
                 IsBusy = true;
-                await navigationService.NavigateAsync(NavigationConstants.TimelinePage);
+                await NavigationService.NavigateAsync(NavigationConstants.TimelinePage);
+                IsBusy = false;
+            });
+
+            OnTakeActionCommand = new DelegateCommand(async () =>
+            {
+                if (IsBusy) return;
+                IsBusy = true;
+                await NavigationService.NavigateAsync(NavigationConstants.ActionsPage);
                 IsBusy = false;
             });
         }
