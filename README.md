@@ -10,7 +10,7 @@ This is the repo for the sample code of the Ficus IoT App of my Contribution to 
 
 ## Part 2
 <p align="center">
-<img src="https://github.com/Pujolsluis/FicusUIChallenge/blob/master/arts/ficusuichallengept2pujolsluis.gif" height="1239" width="600" title="TimelineView Sample - Pujolsluis"/>
+<img src="https://github.com/Pujolsluis/FicusUIChallenge/blob/master/arts/ficusuichallengept2pujolsluis.gif" height="620" width="300" title="TimelineView Sample - Pujolsluis"/>
 </p>
 
 <p align="left">
