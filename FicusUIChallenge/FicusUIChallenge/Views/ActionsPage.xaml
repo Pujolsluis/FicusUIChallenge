@@ -23,7 +23,7 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                    <StackLayout Padding="0,0,48,0" Grid.ColumnSpan="2"
+                <StackLayout Padding="0,0,48,0" Grid.ColumnSpan="2"
                              Orientation="Horizontal">
                     <Image WidthRequest="24"
                            HeightRequest="24"
@@ -208,7 +208,7 @@
                     <behaviors:ViewTappedButtonBehavior Command="{Binding OnConfirmActionCommand}" />
                 </yummy:PancakeView.Behaviors>
             </yummy:PancakeView>
-            <StackLayout Margin="0,32,-32,0" Orientation="Horizontal"
+            <StackLayout Margin="0,32,-32,16" Orientation="Horizontal"
                          Grid.Row="6" Grid.Column="1"
                          HorizontalOptions="End"
                          Spacing="8">
